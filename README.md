@@ -6,5 +6,5 @@
 
 Aqui voy a poner una breve explicación mi linea y mis colegas
 
-Aqui tiene que ir una foto. según gemini va asi:
+[Our Team](Team.md) | [Projects and Research](Projects.md) | [Tutorials](Tutorials.md)
 
