@@ -27,4 +27,19 @@ plt.xlabel('Timestep')
 plt.ylabel('Temperature (K)')
 plt.show()
 ```
-Test texto 2
+Esto es un ejemplo de código para bash
+
+```bash
+for i in $(seq 1 10); do cat "hola $i" ; done
+clear
+pip install lammps
+```
+
+y este es un ejemplo de input de lammps
+
+```lammps
+fix  id  all  nvt  temp 200 200 1000
+run 100000
+```
+
+Eso sería de momento
