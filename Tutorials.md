@@ -26,3 +26,5 @@ plt.plot(data['Step'], data['Temp'])
 plt.xlabel('Timestep')
 plt.ylabel('Temperature (K)')
 plt.show()
+```
+Test texto 2
