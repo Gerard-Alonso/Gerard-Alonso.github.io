@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Gerard's homepage
 description: This is my personal webpage where I share results from projects I develop and share my know-how to simulations I carry out.
+
+logo: /assets/mi-foto.jpg  # Algunos temas usan esto para poner tu foto en la barra lateral
