@@ -13,8 +13,7 @@ department: "Chemical Engineering Department"
 research_interests:
   - "Molecular simulation of fluids and materials"
   - "Phase equilibrium thermodynamics"
-  - "Electronic structure calculations (DFT)"
-  - "Adsorption in porous materials (MOFs/Zeolites)"
+  - "Computational Modeling of Adsorption in porous materials"
 
 # Información de Contacto
 contact_info:
