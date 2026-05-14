@@ -3,5 +3,26 @@ layout: default
 title: Tutoriales
 ---
 
-# Tutoriales de Simulación
-Aquí puedes empezar a listar tus guías de VASP, LAMMPS o Python.
+
+# Simulation Tutorials
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+A continuación, se muestra un ejemplo de cómo procesar datos de una simulación usando Python y Pandas:
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Cargar datos de una simulación de LAMMPS o VASP
+data = pd.read_csv('log_file.csv')
+
+# Calcular el promedio de la energía total
+mean_energy = data['Energy'].mean()
+print(f"La energía promedio es: {mean_energy}")
+---
+# Graficar la evolución de la temperatura
+plt.plot(data['Step'], data['Temp'])
+plt.xlabel('Timestep')
+plt.ylabel('Temperature (K)')
+plt.show()
