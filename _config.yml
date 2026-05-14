@@ -1,5 +1,24 @@
 theme: jekyll-theme-minimal
-title: Gerard's homepage
-description: This is my personal webpage where I share results from projects I develop and share my know-how to simulations I carry out.
+title: Dr. Gerard ALonso
+description: I am currently an assistant professor belonging to the Applied Molecular Thermodynamics Group at the Chemical Engineering Department at the University of Concepción. My research interest is the simulation and thermodynamic modeling of phase equilibria and interfacial systems (LV / LL / SL / SV) for different energy-related applications. My modelling skills range from fundamental ab initio (or DFT) calculations, to atomistic/coarse-grained molecular simulations and macroscopic equations of state.
 
 logo: /Assets/Profile.png  # Algunos temas usan esto para poner tu foto en la barra lateral
+
+# Información Personal y Académica
+position: "Assistant Professor"
+university: "Universidad de Concepción"
+department: "Chemical Engineering Department"
+
+# Líneas de Investigación (Research Interests)
+research_interests:
+  - "Molecular simulation of fluids and materials"
+  - "Phase equilibrium thermodynamics"
+  - "Electronic structure calculations (DFT)"
+  - "Adsorption in porous materials (MOFs/Zeolites)"
+
+# Información de Contacto
+contact_info:
+  email: "geraralonso@udec.cl"
+  office: "Facultad de Ingeniería, Departamento de Ingeniería Química, Oficina 407"
+  google_scholar: "https://scholar.google.com/citations?user=Yvt84FAAAAAJ&hl=es"
+  github_username: "Gerard-Alonso"
