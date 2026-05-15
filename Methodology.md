@@ -12,22 +12,22 @@ $\zeta=\frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
 $\Lambda=\frac{\varepsilon_2 - \varepsilon_12 + \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
+Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase in contact using $L_x=L_y > 10\sigma$ and $Lz = 7\sigma$
+
+<p align="center">
+  <img src="Assets/Simbox.png" alt="Simbox" width="100%">
+  <figcaption>Figure 1: Simulation box setup used for VLLE calculations. </figcaption>
+</p>
 
 
 
-vamos por aqeui
-
-.xc
 The vapor-liquid-liquid equilibria (VLLE) for water + butanol + polar entrainer mixtures was evaluated using the group contribution-based molecular SAFT-VR Mie equation of state [^3]. To that end, we used the SGTpy python module [^2], which is an open-source code distributed through the following Git-hub: 
 
 [![SGTpy Repository](https://img.shields.io/badge/GitHub-SGTpy_Code-blue?logo=github&style=for-the-badge)](https://github.com/gustavochm/sgtpy)
 
 We modeled the binary water + butanol / water + entrainer / entrainer + butanol binary mixtures, using as entrainers = cyclopenthyl methyl eter (CpME) and dimethyl carbonate (DMC). We saw good accuracy in reproducing all binary phase equilibria and then proceed to model the three-phase equilibria. Since no experimental data was available for the ternary VLLE line, we carried out three-phase equilibrium experimental determinations with thecommercial Fisher VLE/VLLE 602 equilibrium cell available in the Cohesion Laboratory at the Universidad de Concepción: 
 
-<p align="center">
-  <img src="Assets/Cell.png" alt="Cell" width="100%">
-  <figcaption>Figure 1: Commercial Fisher VLE/VLLE 602 equilibrium cell to measure three-phase equilibria. </figcaption>
-</p>
+
 
 We obtained the following ternary three phase lines for each system, which all behave zeotropically and exhibit no heteroazeotropic point (no temperature minimum within the ternary 3-phase line). However, we observed that the mutual miscibilities amongst water/butanol/entrainer depend strongly on the polarity of the entrainer and specially on their associative capabilities. CpME has a single hydrogen bond (HB) acceptor site in the -O- atom, whereas DMC has three sites (two carbonyl =O and a ether -O- atoms). So the DMC LLE is much "thinner" than in CpME. In fact, DMC shows even a has a convex curvature in its ternary LLE, showing a strong deviation from the (more) common concave pattern shown by CpME.
 
