@@ -8,14 +8,15 @@ We modeled the binary water + butanol / water + alkane / alkane + butanol binary
   <img src="Assets/VLLLEs.png" alt="VLLLEs" width="100%">
 </p>
 
-A three-phase line with a low temperature heteroazeotropic point was located for all systems, all containing a 4-phase point (VLLL) equilibrium alongside the VLLE line, which was not reported for these systems. In long-chain alkanes the heteroazeotrope coincides with the 4-phase point, whereas short-chain alkanes they are located at different thermodynamic coordinates. 
+A three-phase line with a low temperature heteroazeotropic point was located for all systems, all containing a 4-phase point (VLLL) equilibrium alongside the VLLE line, which was not reported for these systems. In long-chain alkanes the heteroazeotrope coincides with the 4-phase point, whereas in short-chain alkanes they are located at different thermodynamic coordinates. The predicted results allowed to evaluate how molecular shape and interactions affect phase equilibria for alkane based entrainers. The less non-polar alkanes displace significantly the butanol-rich end of the VLLLE and keep the vapor end close to the water + alkane binary. On the other hand, large chain alkanes keep the butanol-rich end of the VLLLE similar to the binary water + butanol and displace significantly the vapor end.
 
-The existence of the 4-phase point ___ is something interesting ___ because...
+We evaluated the suitability of those thermodynamic scenarios in a standard heteroazeotropic distillation process. We have built the residue curve maps and carried out material balances to determine which alkanes perform better for the dehydration. After observing the compositions of the $1^st$ column product, we concluded that the distillation frontiers prevent those mixtures to be directly separated with this setup. However, the existence of the 4-phase point opens up new separation scenarios that can be exploited for separation, since the decanter will not generate 2 phases, but 3 at equilibrium. Those 3 phases can be treated separately or mixed at different ratios depending on the process needs. Exploring different distillation processes lays out of scope for this project but should be kept in mind when treating with such mixtures in the future.
 
-Then we have evaluated the suitability of those thermodynamic scenarios in a standard heteroazeotropic distillation process. We have built the residue curve maps and carried out material balances to determine which alkane performs better for the dehydration.
+### // Figura de un triangulo con 3 líquidos con redonditas y un decantador que separa en 3 fases //
 
+Process simulations can be carried out to design new separation setups, but distillation of such ternary mixtures ended in a 4-phase VLLLE configuration, which exhibitted large convergence issues. For this reason, we have produced a free code based on activity coefficient models to incorporate them in process simulations. __ complete tomorrow .--
 
-The complete work is compiled in the Undergraduate Theses of Octavio Barría [^3] and Nicolás Díaz [^4]. Please check them out for more information. Hyperlinks are included to each paper and thesis.
+The complete works are compiled in the Undergraduate Theses of Octavio Barría [^3] and Nicolás Díaz [^4]. Please check them out for more information. Hyperlinks are included to each paper and thesis.
 
 [^1]: saft-g
 [^2]: sgtpy
