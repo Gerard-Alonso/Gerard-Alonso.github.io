@@ -46,7 +46,9 @@ We applied this methodology to explore the phase diagram and found different wet
   <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced wetting temperature is included in isolines in the C and D regions. </figcaption>
 </p>
 
-This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit.
+This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
+- **SAFT:** VLLE prediction with SGTpy (insert link to tutorial 1).
+- **MD:** VLLE prediction with LAMMPS MD (insert link to tutorial 2).
 
 ## NEXT
 
