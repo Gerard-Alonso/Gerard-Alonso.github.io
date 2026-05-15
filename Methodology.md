@@ -29,7 +29,7 @@ $\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $
 
 where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $\gamma^{\alpha\delta}$ > $\gamma^{\beta\delta}$ and $\gamma^{\alpha\beta}$ we can write the relationship:
 
-**as : :** $\gamma^{\alpha\delta} <= \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
+**as : :** $\gamma^{\alpha\delta} \le \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
 
 **or as : :**  $S^{\beta,\alpha\delta} = \gamma^{\beta\delta} + \gamma^{\alpha\beta} - \gamma^{\alpha\delta}$
 
