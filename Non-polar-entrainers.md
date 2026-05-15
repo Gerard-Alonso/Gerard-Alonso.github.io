@@ -17,7 +17,7 @@ This is correlated with the temperature of the binary azeotropes. When binary mi
 We then aimed to evaluate the suitability of those thermodynamic scenarios in a standard heteroazeotropic distillation process. We have built the residue curve maps and carried out material balances to determine which alkanes perform better for the dehydration. After observing the compositions of the $1^st$ column product, we concluded that the distillation frontiers prevent those mixtures to be directly separated with this setup. However, the existence of the 4-phase point opens up new separation scenarios that can be exploited for separation, since the decanter will not generate 2 phases, but 3 at equilibrium. Those 3 phases can be treated separately or mixed at different ratios depending on the process needs. Exploring different distillation processes lays out of scope for this project but should be kept in mind when treating with such mixtures in the future.
 
 <p align="center">
-  <img src="Assets/RCMs.png" alt="RMCs" width="100%">
+  <img src="Assets/RCM.png" alt="RMCs" width="100%">
   <figcaption>Figure 2: Residue curve maps for the water + butanol + alkane ternary mixtures. .</figcaption>
 </p>
 
