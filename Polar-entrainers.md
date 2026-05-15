@@ -23,7 +23,7 @@ The complete works with more technical details are compiled in the corresponding
   
 Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
   - **Recommended Start:** VLLE prediction with SGTpy _(insert link to tutorial 1)_
-  - **Water+Butanol+CPME:** [![CPME Repository](https://img.shields.io/badge/GitHub-Water+1-Butanol+CPME-blue?logo=github&style=for-the-badge)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BCPME)
+  - **Water+Butanol+CPME:** [![CPME Repository](https://img.shields.io/badge/GitHub-Triphasic_Equilibria/Water+1-Butanol+CPME-blue?logo=github&style=for-the-badge)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BCPME)
   - **Water+Butanol+DMC:** [![DMC Repository](https://img.shields.io/badge/GitHub-Water+1-Butanol+DMC-blue?logo=github&style=for-the-badge)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BDMC)
 
     
