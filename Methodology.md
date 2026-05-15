@@ -43,7 +43,7 @@ We applied this methodology to explore the phase diagram and found different wet
 
 <p align="center">
   <img src="Assets/Map.png" alt="Map" width="100%">
-  <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced $T_w*=T_w/\varepsilon_1$ </figcaption>
+  <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced wetting temperature is included in isolines in the C and D regions. </figcaption>
 </p>
 
 This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit.
