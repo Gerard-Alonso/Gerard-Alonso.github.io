@@ -1,7 +1,7 @@
 The vapor-liquid-liquid equilibria (VLLE) for water + butanol + alkane mixtures was evaluated using the group contribution-based molecular SAFT-γ Mie equation of state [^1]. To that end, we used the SGTpy python module [^2], which is an open-source code distributed through the following Git-hub: 
 <p align="left">
-  <a href="https://github.com/usuario/repositorio">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=usuario&repo=repositorio&theme=nebulas" alt="Repo del colega">
+  <a href="https://github.com/gustavochm/sgtpy">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=gustavochm&repo=sgtpy&theme=nebulas" alt="SGTpy">
   </a>
 </p>
 
