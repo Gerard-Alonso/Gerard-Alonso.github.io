@@ -1,7 +1,17 @@
-The vapor-liquid-liquid equilibria (VLLE) for water + butanol + alkane mixtures was evaluated using the SAFT-VR Mie EoS [^1] 
+The vapor-liquid-liquid equilibria (VLLE) for water + butanol + alkane mixtures was evaluated using the group contribution-based molecular SAFT-γ Mie equation of state [^1]. To that end, we used the SGTpy python module [^2], which is an open-source code distributed through the following Git-hub: 
+<p align="left">
+  <a href="https://github.com/usuario/repositorio">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=usuario&repo=repositorio&theme=nebulas" alt="Repo del colega">
+  </a>
+</p>
+
+We modeled the binary water + butanol / water + alkane / alkane + butanol binary mixtures, using as alkanes = hexane, heptane, octane and nonane. We saw good accuracy in reproducing all binary phase equilibria. 
+
+Then, we have modeled the ternary heteroazeotropic line for each system
 
 
-[^1]: Garcia,
+[^1]: saft-g
+[^2]: sgtpy
 
 
 
