@@ -12,18 +12,24 @@ $\zeta=\frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
 $\Lambda=\frac{\varepsilon_2 - \varepsilon_12 + \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
-Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase in contact using $L_x=L_y > 10\sigma$ and $Lz = 7\sigma$
+Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase as shown in the following Figure. Each phase was filled with molecules according to their composition and density, as predicted with a preliminary calculation from a SAFT-VR Mie equation of state [^3], imposing an equivalent LJ potential. SAFT calculations were carried out in the SGTpy python module [^4], which is an open-source code distributed through the following Git-hub: 
+
+[![SGTpy Repository](https://img.shields.io/badge/GitHub-SGTpy_Code-blue?logo=github&style=for-the-badge)](https://github.com/gustavochm/sgtpy)
 
 <p align="center">
   <img src="Assets/Simbox.png" alt="Simbox" width="100%">
   <figcaption>Figure 1: Simulation box setup used for VLLE calculations. </figcaption>
 </p>
 
+We have tested the phase and interfacial behavior of several mixtures varying the ($\zeta, \Lambda$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($\gamma^{\alpha\beta}, $\gamma^{\beta\delta}, $\gamma^{\alpha\delta}$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
 
+$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz$             where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks
 
-The vapor-liquid-liquid equilibria (VLLE) for water + butanol + polar entrainer mixtures was evaluated using the group contribution-based molecular SAFT-VR Mie equation of state [^3]. To that end, we used the SGTpy python module [^2], which is an open-source code distributed through the following Git-hub: 
+We have tested the phase and interfacial 
 
-[![SGTpy Repository](https://img.shields.io/badge/GitHub-SGTpy_Code-blue?logo=github&style=for-the-badge)](https://github.com/gustavochm/sgtpy)
+## 
+
+The vapor-liquid-liquid equilibria (VLLE) for water + butanol + polar entrainer mixtures was evaluated using the group contribution-based molecular SAFT-VR Mie equation of state . To that end, we used the 
 
 We modeled the binary water + butanol / water + entrainer / entrainer + butanol binary mixtures, using as entrainers = cyclopenthyl methyl eter (CpME) and dimethyl carbonate (DMC). We saw good accuracy in reproducing all binary phase equilibria and then proceed to model the three-phase equilibria. Since no experimental data was available for the ternary VLLE line, we carried out three-phase equilibrium experimental determinations with thecommercial Fisher VLE/VLLE 602 equilibrium cell available in the Cohesion Laboratory at the Universidad de Concepción: 
 
@@ -47,9 +53,10 @@ Additionally, some codes and tutorials are shared in here to teach how to calcul
   - **Water+Butanol+DMC:** [![DMC System](https://img.shields.io/badge/GitHub-Water%20%2B%201--Butanol%20%2B%20DMC-blue?logo=github&style=flat-square)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BDMC)
     
 
-
-[^1]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
-[^2]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
+[^1]:
+[^2]:
+[^3]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
+[^4]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
 [^3]: Alonso, G., Cartes, M., Mejía, A. (2025) Vapor-liquid-liquid equilibria for the water + 1-butanol + CPME mixture. Fluid Phase Equilib. 591: 114297
 [^4]: Ulloa, A., Cartes, M., Alonso, G., Mejía, A. (2025) Three phase equilibria and interfacial properties of water + dimethyl carbonate + 1-butanol ternary mixture. J. Mol. Liq. 439: 128785
 
