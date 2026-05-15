@@ -5,6 +5,14 @@ title: Proyectos
 
 # BIOFUEL PRODUCTION OPTIMIZATION: EXPLORATION OF THE BEST THERMODYNAMIC SCENARIO FOR BIO-BUTANOL DISTILLATION
 
+## Page Objective
+This page has three main objectives: 
+- First, it aims to share the main ideas and findings of the project in a simple way, so that what was learned is shared openly to the scientific, productive and educational community.
+- Second, it provides tools and tutorials to reproduce some key points of the project, so that anyone could use them to model their systems or in teaching thermodynamics.
+- Third, it compiles the main results of the project in a synthesized way, with references and links to the main outputs produced by the project.
+
+## Summary
+
 Our world currently relies on fossil fuels that release carbon emissions, fueling the global climate crisis. To protect the environment, we must transition to renewable energy. While wind and solar are vital, biofuels offer a unique solution for transportation because they can be produced from renewable sources like forestry waste or algae.
 
 Bio-alcohols, such as butanol, are especially promising. Unlike fossil fuels, the plants and algae used to create them actually "breathe in" and fixate $CO_2$ as they grow, helping to offset emissions. This creates a circular, cleaner energy cycle. The production process involves fermentation, which results in a mixture of alcohol and a large amount of water. For these fuels to be used safely in car engines as a substitute for gasoline, they must be almost perfectly dry. Currently, removing this water is the "bottleneck" because the process is energy intensive, so bridging this technical gap is essential. Solving the water-removal problem is the key to making the clean energy transition practical and affordable for everyone.
@@ -25,7 +33,9 @@ Our results provide a better understanding of the molecular role of each entrain
 
 This discovery points out mechanisms to improve bio-butanol dehydration and paves the way to propose newly efficient drying techniques for bio-butanol, which may eventually help in reducing the overall carbon footprint of the entire process. Ultimately, this research moves us closer to a world where high-performance, eco-friendly fuel is a cost-effective reality for everyday drivers.
 
-------
+---------------------------------------------------------------
+
+## Dive deeper into the project
 
 To delve deeper into the insights achieved by this project follow the next tabs
 
