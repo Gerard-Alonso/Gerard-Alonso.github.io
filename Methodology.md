@@ -23,11 +23,28 @@ Simulation cell were built as standard coexistence orthorombic cells with two li
 
 We have tested the phase and interfacial behavior of several mixtures varying the ($\zeta, \Lambda$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($\gamma^{\alpha\beta}, \gamma^{\beta\delta}, \gamma^{\alpha\delta}$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
 
-$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $.             where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks
+$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $            
 
-We have tested the phase and interfacial 
+where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $\gamma^{\alpha\delta}$ > $\gamma^{\beta\delta}$ and $\gamma^{\alpha\beta}$ we can write the relationship:
 
-## 
+$\gamma^{\alpha\delta} <= \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
+
+If the inequality holds for every temperature the system exhibits partial wetting. If the equality holds for every temperature the system exhibits complete wetting. And if the inequality switches to an equality at a certain temperature it exhibits a wetting transition temperature ($T_w$), which can be 1st order or 2nd order transitions depending on the curvature (linear or quadratic) of the   the Tw
+
+<p align="center">
+  <img src="Assets/Wettings.png" alt="Wettings" width="100%">
+  <figcaption>Figure 2: Interfacial tension interplay for systems with (a) partial wetting, (b) perfect wetting, (c) 1st order wetting transition and (d) 2nd order wetting transition. </figcaption>
+</p>
+
+we build the map doing that like this
+
+
+<p align="center">
+  <img src="Assets/Map.png" alt="Map" width="100%">
+  <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size. </figcaption>
+</p>
+
+## NEXT
 
 The vapor-liquid-liquid equilibria (VLLE) for water + butanol + polar entrainer mixtures was evaluated using the group contribution-based molecular SAFT-VR Mie equation of state . To that end, we used the 
 
