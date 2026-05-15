@@ -39,13 +39,14 @@ If the inequality holds for every temperature the system exhibits partial wettin
   <figcaption>Figure 2: Interfacial tension interplay for systems with (a) partial wetting, (b) perfect wetting, (c) 1st order wetting transition and (d) 2nd order wetting transition. </figcaption>
 </p>
 
-We applied this methodology to explore the phase diagram and found different wetting behaviors depending on the ($\zeta, Lambda$) coordinates. Those are shown in Figure 3 with 
-
+We applied this methodology to explore the phase diagram and found different wetting behaviors depending on the ($\zeta, \Lambda$) coordinates. Those are shown in Figure 3 where each simulation set of 4-5 temperatures is shown by a single point in the diagram. Regions where the behavior is changing from one type of wetting to another are further populated to get better accuracy of the transition regions. A cleaner final diagram is also shared with the four wetting regions placed 
 
 <p align="center">
   <img src="Assets/Map.png" alt="Map" width="100%">
-  <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size. </figcaption>
+  <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced $T_w*=T_w/\varepsilon_1$ </figcaption>
 </p>
+
+This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit.
 
 ## NEXT
 
