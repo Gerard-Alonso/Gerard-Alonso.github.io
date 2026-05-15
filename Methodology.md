@@ -27,16 +27,18 @@ $\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $
 
 where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $\gamma^{\alpha\delta}$ > $\gamma^{\beta\delta}$ and $\gamma^{\alpha\beta}$ we can write the relationship:
 
-$\gamma^{\alpha\delta} <= \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
+**as : :** $\gamma^{\alpha\delta} <= \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
+**or as : :**  $S^{\beta,\alpha\delta} = \gamma^{\beta\delta} + \gamma^{\alpha\beta}$ - \gamma^{\alpha\delta}
 
-If the inequality holds for every temperature the system exhibits partial wetting. If the equality holds for every temperature the system exhibits complete wetting. And if the inequality switches to an equality at a certain temperature it exhibits a wetting transition temperature ($T_w$), which can be 1st order or 2nd order transitions depending on the curvature (linear or quadratic) of the   the Tw
+
+If the inequality holds for every temperature the system exhibits partial wetting. If the equality holds for every temperature the system exhibits complete wetting. And if the inequality switches to an equality at a certain temperature it exhibits a wetting transition temperature ($T_w$), which can be 1st order or 2nd order transitions depending on the curvature (linear or quadratic) of the $S^{\beta,\alpha\delta}$ function when approaching $T_w$
 
 <p align="center">
   <img src="Assets/Wettings.png" alt="Wettings" width="100%">
   <figcaption>Figure 2: Interfacial tension interplay for systems with (a) partial wetting, (b) perfect wetting, (c) 1st order wetting transition and (d) 2nd order wetting transition. </figcaption>
 </p>
 
-we build the map doing that like this
+We applied this methodology to explore the phase diagram and found different wetting behaviors depending on the ($\zeta, Lambda$) coordinates. Those are shown in Figure 3 with 
 
 
 <p align="center">
