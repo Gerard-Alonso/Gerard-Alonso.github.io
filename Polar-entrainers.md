@@ -30,10 +30,8 @@ Additionally, some codes and tutorials are shared in here to teach how to calcul
 
 [^1]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
 [^2]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
-[^3]: 
-[^4]: 
-[^5]: 
-[^6]: 
+[^3]: Alonso, G., Cartes, M., Mejía, A. (2025) Vapor-liquid-liquid equilibria for the water + 1-butanol + CPME mixture. Fluid Phase Equilib. 591: 114297
+[^4]: Ulloa, A., Cartes, M., Alonso, G., Mejía, A. (2025) Three phase equilibria and interfacial properties of water + dimethyl carbonate + 1-butanol ternary mixture. J. Mol. Liq. 439: 128785
 
 
 
