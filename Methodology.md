@@ -23,7 +23,7 @@ Simulation cell were built as standard coexistence orthorombic cells with two li
 
 We have tested the phase and interfacial behavior of several mixtures varying the ($\zeta, \Lambda$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($\gamma^{\alpha\beta}, \gamma^{\beta\delta}, \gamma^{\alpha\delta}$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
 
-$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz$             where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks
+$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T \ dz \ \ \ \ \ \ \ \ \ \ \ \ $             where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks
 
 We have tested the phase and interfacial 
 
