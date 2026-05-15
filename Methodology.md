@@ -6,7 +6,7 @@ The first stage of this project was to implement a sistematic methodology to pre
 
 ## Binary LJ Mixture, A global interfacial map for LJ mixtures.
 
-We employed Molecular Dynamics simulations with LAMMPS [^1] to explore the relationship between phase equilbria and interfacial behavoir of binary Lennard-Jones (LJ) mixtures of equal size. The LAMMPS code can be downloaded and installed as shown by their webpage: https://www.lammps.org/#gsc.tab=0
+We employed Molecular Dynamics (MD) simulations with LAMMPS [^1] to explore the relationship between phase equilbria and interfacial behavoir of binary Lennard-Jones (LJ) mixtures of equal size. The LAMMPS code can be downloaded and installed as shown by their webpage: https://www.lammps.org/#gsc.tab=0
 
 We selected a reference fluid with $\varepsilon_1$ = 148 K and $\sigma_1$ = $\sigma_2$ = 3.73 Å, and assigned $\varepsilon_2$ and $\varepsilon_{12}$ based on the $\zeta$ and $\Lambda$ coordinates of the global phase diagram, as shown in [^2]:
 
@@ -52,39 +52,36 @@ This tool, in conjunction to the global phase diagram, is a fast and reliable me
 - **SAFT:** VLLE prediction with SGTpy (insert link to tutorial 1).
 - **MD:** VLLE prediction with LAMMPS MD (insert link to tutorial 2).
 
-## NEXT
+## Non-Associative Refrigerant Mixtures
+We have employed the same methodology to different refrigerant components and mixtures to evaluate their phase equilibria. The objectives of this work are not in the same line as the project but serve as an intermediate step to evaluate the capacity of MD/SAFT methodologies in capturing the accuracy in reproducing phase equilibria of more complex non-associative mixtures. This test could not be done with our molecules of interest, because butanol and water always associate.
 
-The vapor-liquid-liquid equilibria (VLLE) for water + butanol + polar entrainer mixtures was evaluated using the group contribution-based molecular SAFT-VR Mie equation of state . To that end, we used the 
-
-We modeled the binary water + butanol / water + entrainer / entrainer + butanol binary mixtures, using as entrainers = cyclopenthyl methyl eter (CpME) and dimethyl carbonate (DMC). We saw good accuracy in reproducing all binary phase equilibria and then proceed to model the three-phase equilibria. Since no experimental data was available for the ternary VLLE line, we carried out three-phase equilibrium experimental determinations with thecommercial Fisher VLE/VLLE 602 equilibrium cell available in the Cohesion Laboratory at the Universidad de Concepción: 
-
-
-
-We obtained the following ternary three phase lines for each system, which all behave zeotropically and exhibit no heteroazeotropic point (no temperature minimum within the ternary 3-phase line). However, we observed that the mutual miscibilities amongst water/butanol/entrainer depend strongly on the polarity of the entrainer and specially on their associative capabilities. CpME has a single hydrogen bond (HB) acceptor site in the -O- atom, whereas DMC has three sites (two carbonyl =O and a ether -O- atoms). So the DMC LLE is much "thinner" than in CpME. In fact, DMC shows even a has a convex curvature in its ternary LLE, showing a strong deviation from the (more) common concave pattern shown by CpME.
+In this work we have employed all-atom MD simulations and SAFT to predict several thermophysical properties of refrigerants and proposed new blends that still have good properties but with lower Global Warming Potential (GWP), when compared to common hydrofluorocarbons. In the following figure we collect the studied components we aimed to replace and from which we propose to make new mixtures:
 
 <p align="center">
-  <img src="Assets/polarVLLE.png" alt="polar VLLE" width="100%">
-  <figcaption>Figure 2: VLLE for water + butanol + entrainer = (a) CpME or (b) DMC. Blue, black and red correspond to the aqueous liquid, organic liquid and vapor phases, respectively. Dots are experimental determinations performed at the cohesion laboratory and lines are SAFT models </figcaption>
+  <img src="Assets/Refrigs.png" alt="Refrigs" width="100%">
+  <figcaption>Figure 4: Structures of the refrigerant molecules studied. </figcaption>
 </p>
 
-These results denote that associative compatibility is negative for the separation of water + butanol mixtures, because it favors mixing, instead of separation. It is worth noting that some of this compounds are great entrainers for ethanol dehydration, but etanol is naturaly more compatible with water that butanol, so it is more succeptible to be dehydrated by polar entrainers. The lower water compatibility of butanol makes it unsuitable for polar entrainer dehydration.
+The mixtures we evaluated are: R410A (50% R32 + 50% R125), R513A (56.0% R1234yf + 44.0% R134a), R454B (31.1% R1234yf + 68.9% R32), R407F (30% R32 + 30$ R125 + 40% R134a), R452B (67.0% R32 + 7.0 R125 + 26.0% R1234yf).
 
+<p align="center">
+  <img src="Assets/Ref-props.png" alt="Ref-props" width="100%">
+  <figcaption>Figure 5: Properties of refrigerant blends predicted through MD and SAFT. (a) Phase envelope, (b) Vapor pressures, (c) Heat capacity, (d) Interfacial tensions, (e) Viscosity  </figcaption>
+</p>
 
-The complete works with more technical details are compiled in the corresponding publications [^3],[^4]. Please check them out for more information. 
-  
-Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
-  - **Recommended Start:** VLLE prediction with SGTpy _(insert link to tutorial 1)_
-  - **Water+Butanol+CPME:** [![DMC System](https://img.shields.io/badge/GitHub-Water%20%2B%201--Butanol%20%2B%20CPME-blue?logo=github&style=flat-square)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BCPME)
-  - **Water+Butanol+DMC:** [![DMC System](https://img.shields.io/badge/GitHub-Water%20%2B%201--Butanol%20%2B%20DMC-blue?logo=github&style=flat-square)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BDMC)
-    
+Those results show that R407F could be replaced by R513A because it has similar volatility but better heat and mass transfer. R410A could be replaced by either R542B or R454B because they all have similar properties but with lower GWP. More information on this topic can be found in the associated publication [7]. 
+
+## Associative Refrigerant Mixtures.
+
+To fill
 
 [^1]:
 [^2]:
 [^3]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
 [^4]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
-[^3]: Alonso, G., Cartes, M., Mejía, A. (2025) Vapor-liquid-liquid equilibria for the water + 1-butanol + CPME mixture. Fluid Phase Equilib. 591: 114297
-[^4]: Ulloa, A., Cartes, M., Alonso, G., Mejía, A. (2025) Three phase equilibria and interfacial properties of water + dimethyl carbonate + 1-butanol ternary mixture. J. Mol. Liq. 439: 128785
-
+[^5]: Alonso, G., Cartes, M., Mejía, A. (2025) Vapor-liquid-liquid equilibria for the water + 1-butanol + CPME mixture. Fluid Phase Equilib. 591: 114297
+[^6]: Ulloa, A., Cartes, M., Alonso, G., Mejía, A. (2025) Three phase equilibria and interfacial properties of water + dimethyl carbonate + 1-butanol ternary mixture. J. Mol. Liq. 439: 128785
+[^7]: ss
 
 
 
