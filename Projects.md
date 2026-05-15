@@ -54,14 +54,14 @@ To delve deeper into the insights achieved by this project follow the next tabs
   .etapa-3 { background: linear-gradient(90deg, #1e3c72, #2a5298); } /* Azul intenso - Polares/H2O */
 </style>
 
-<a href="./Métodos" class="banner-link etapa-1">
+<a href="./Methodology" class="banner-link etapa-1">
   STAGE 1: Methodology & Molecular Simulation
 </a>
 
-<a href="./Entrainers-apolares" class="banner-link etapa-2">
+<a href="./Non-polar-entrainers" class="banner-link etapa-2">
   STAGE 2: Non-polar Entrainers (Hydrocarbons)
 </a>
 
-<a href="./Entrainers-polares" class="banner-link etapa-3">
+<a href="./Polar-entrainers" class="banner-link etapa-3">
   STAGE 3: Polar Entrainers (Ethers & Mixed)
 </a>
