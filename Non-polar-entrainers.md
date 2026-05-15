@@ -30,6 +30,7 @@ Process simulations can be carried out to design new separation setups, but dist
 
 The complete works are compiled in the Undergraduate Theses of Octavio Barría [^5] and Nicolás Díaz [^6]. Please check them out for more information. The links to the repository with those theses are can be found below:
   - UdeC Repository: [https://repositorio.udec.cl/items/c98879ec-649d-48d6-8b43-3d8f5e04b8df](https://repositorio.udec.cl/search?spc.page=1&query=)
+  - GitHub Repository for the LLLE code: [![LLLE Repository](https://img.shields.io/badge/GitHub-SGTpy_Code-blue?logo=github&style=for-the-badge)](https://github.com/nicodiazfp/CodigosMT)
   
 Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
   - **Recommended Start:** VLLE prediction with SGTpy _(insert link to tutorial 1)_
