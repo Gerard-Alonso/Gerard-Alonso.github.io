@@ -4,7 +4,9 @@ The vapor-liquid-liquid equilibria (VLLE) for water + butanol + alkane mixtures 
 
 We modeled the binary water + butanol / water + alkane / alkane + butanol binary mixtures, using as alkanes = hexane, heptane, octane and nonane. We saw good accuracy in reproducing all binary phase equilibria and then proceed to model the three-phase equilibria. We obtained the following ternary heteroazeotropic lines for each system: 
 
-/fig/
+<p align="center">
+  <img src="Assets/VLLLEs.png" alt="VLLLEs" width="100%">
+</p>
 
 A three-phase line with a low temperature heteroazeotropic point was located for all systems, all containing a 4-phase point (VLLL) equilibrium alongside the VLLE line, which was not reported for these systems. In long-chain alkanes the heteroazeotrope coincides with the 4-phase point, whereas short-chain alkanes they are located at different thermodynamic coordinates. 
 
