@@ -49,7 +49,8 @@ We applied this methodology to explore the phase diagram and found different wet
 </p>
 
 This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
-[![Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)]
+
+![Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)
 
 
 Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
