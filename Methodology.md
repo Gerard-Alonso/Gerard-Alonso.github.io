@@ -14,7 +14,7 @@ $\zeta=\frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
 $\Lambda=\frac{\varepsilon_2 - \varepsilon_12 + \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
 
-Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase as shown in the following Figure. Each phase was filled with molecules according to their composition and density, as predicted with a preliminary calculation from a SAFT-VR Mie equation of state [^3], imposing an equivalent LJ potential. SAFT calculations were carried out in the SGTpy python module [^4], which is an open-source code distributed through the following Git-hub: 
+Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase as shown in the following Figure. Each phase was filled with molecules according to their composition and density, as predicted with a preliminary calculation from a SAFT-VR Mie equation of state [^3], imposing an equivalent LJ potential. Results were compatible since the interaction potential is equivalent in both representations. SAFT calculations were carried out in the SGTpy python module [^4], which is an open-source code distributed through the following Git-hub: 
 
 [![SGTpy Repository](https://img.shields.io/badge/GitHub-SGTpy_Code-blue?logo=github&style=for-the-badge)](https://github.com/gustavochm/sgtpy)
 
@@ -72,8 +72,18 @@ The mixtures we evaluated are: R410A (50% R32 + 50% R125), R513A (56.0% R1234yf 
 Those results show that R407F could be replaced by R513A because it has similar volatility but better heat and mass transfer. R410A could be replaced by either R542B or R454B because they all have similar properties but with lower GWP. More information on this topic can be found in the associated publication [7]. 
 
 ## Associative Refrigerant Mixtures.
+When modeling Water + Butanol + Entrainer mixtures with SAFT-based equations of state, it is required to include association interactions to account for the strongly directional hydrogen bonds generated within those fluids. However, in MD, O -- H association comes implicitly from the molecular representation and the electrostatic interactions involved from those groups. 
 
-To fill
+In summary, SAFT and MD results now use a different approach, so the results are no longer a perfect fit. So, when trying to model such mixtures SAFT-based equations of state can be easily fit to available thermophysical data to produce accurate predictions with low computational time. Even though, MD force fields can also be refitted, the cost is significantly higher and it is a common practice to stcik to a generic force field).
+
+In the next figure one can see the difference in LLE and VLLE predictions using a SAFT-based equation of state _vs._ MD with generic TraPPE-UA + TIP4P/2005 force fields. MD overstimates miscibility, so it substantially overstimate the triple point. The example system is water + CPME.
+
+<p align="center">
+  <img src="Assets/LLE.png" alt="LLE" width="100%">
+  <figcaptin>Figure 6: LLE, VLLE of water + CpME in red we have SAFT predictions, in blue MD results and in red black dots are experimental data. </figcaption>
+</p>
+
+In general both methods can be used, but after illustrating the cost of MD we concluded that SAFT is the most suitable way to handle complex associative phase and intefacial property predictions. 
 
 [^1]:
 [^2]:
