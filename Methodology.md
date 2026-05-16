@@ -81,7 +81,7 @@ When modeling Water + Butanol + Entrainer mixtures with SAFT-based equations of 
 
 In summary, SAFT and MD results now use a different approach, so the results are no longer a perfect fit. So, when trying to model such mixtures SAFT-based equations of state can be easily fit to available thermophysical data to produce accurate predictions with low computational time. Even though, MD force fields can also be refitted, the cost is significantly higher and it is a common practice to stcik to a generic force field).
 
-In the next figure one can see the difference in LLE and VLLE predictions using a SAFT-based equation of state _vs._ MD with generic TraPPE-UA + TIP4P/2005 force fields. MD overstimates miscibility, so it substantially overstimate the triple point. The example system is water + CPME.
+In the next figure one can see the difference in LLE and VLLE predictions using a SAFT-based equation of state _vs._ MD with generic TraPPE-UA + TIP4P/2005 force fields. MD severely undestrimates miscibility, so it overstimates the triple point. The example system shows the LLE and VLLE of the water + CPME system, where CpME miscibility in water is almost zero, clearly requiring refitting of the force field crossed interactions and hampering the predicting and fast-screening capabilities of the methodology.
 
 <p align="center">
   <img src="Assets/LLE.png" alt="LLE" width="50%">
