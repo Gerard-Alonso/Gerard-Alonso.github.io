@@ -79,7 +79,7 @@ In summary, SAFT and MD results now use a different approach, so the results are
 In the next figure one can see the difference in LLE and VLLE predictions using a SAFT-based equation of state _vs._ MD with generic TraPPE-UA + TIP4P/2005 force fields. MD overstimates miscibility, so it substantially overstimate the triple point. The example system is water + CPME.
 
 <p align="center">
-  <img src="Assets/LLE.png" alt="LLE" width="100%">
+  <img src="Assets/LLE.png" alt="LLE" width="50%">
   <figcaptin>Figure 6: LLE, VLLE of water + CpME in red we have SAFT predictions, in blue MD results and in red black dots are experimental data. </figcaption>
 </p>
 
