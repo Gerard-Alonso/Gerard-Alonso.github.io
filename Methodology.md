@@ -83,9 +83,10 @@ In the next figure one can see the difference in LLE and VLLE predictions using 
   <figcaptin>Figure 6: LLE, VLLE of water + CpME in red we have SAFT predictions, in blue MD results and in red black dots are experimental data. </figcaption>
 </p>
 
-In general both methods can be used, but after illustrating the cost of MD we concluded that SAFT is the most suitable way to handle complex associative phase and intefacial property predictions. 
+In general both methods can be used, but after illustrating the cost of MD we concluded that SAFT is the most suitable way to handle complex associative phase and intefacial property predictions. VLLE prediction tutorials were already shared avobe.
 
-[^1]:
+
+[^1]: Tompson, A. P., Aktulga, H. M., Berger, R., Bolintineanu, D. S., Brown, W. M., Crozier, P. S., in ’t Veld, P. J., Kohlmeyer, A., Moore, S. G., Nguyen, T. D., Shan, R., Stevens, M. J., Tranchida, J., Trott, C., & Plimpton, S. J. (2022). LAMMPS—A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications, 271, 108171. https://doi.org/10.1016/j.cpc.2021.10817
 [^2]:
 [^3]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
 [^4]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
