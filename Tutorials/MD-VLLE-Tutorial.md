@@ -24,7 +24,7 @@ GPU installation is strongly recomended because VLLE simulations on LJ fluids is
   <img src="../Assets/Colab Setting.png" alt="Colab setting" width="100%">
 </p>
 
-Execute the $1^{st}$ block and install GPU-LAMMPS. This is an "almost-minimal" installation of LAMMPS containig the basic packages and the optional RIGID, GPU and EXTRA-PAIR packages. The installation may last for around 20 minutes and a message will pop up at some point informing that the GPU is not being used. Ignore the message and wait for the installation to complete. I recommend starting this tutorial with time and setting the installation right now, even if you are not ready to simulate. You can set everything up in parallel to the installation process.
+Execute the $1^{st}$ block and install GPU-LAMMPS. This is an "almost-minimal" installation of LAMMPS containig the basic packages and the optional RIGID, GPU and EXTRA-PAIR packages. The installation may last for around 35 minutes and a message will pop up at some point informing that the GPU is not being used. Ignore the message and wait for the installation to complete. I recommend starting this tutorial with time and setting the installation right now, even if you are not ready to simulate. You can set everything up in parallel to the installation process.
 
 
 
