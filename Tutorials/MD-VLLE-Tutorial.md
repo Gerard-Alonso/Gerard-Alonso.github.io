@@ -18,7 +18,7 @@ This notebook has 2 blocks:
 - An installation block for GPU-based LAMMPS with an NVIDIA T4 architecture (the standard Google Colab uses for free users)
 - An execution block with 1 CPU + 1 GPU
 
-GPU installation is strongly recomended because VLLE simulations on LJ fluids is extremely efficient. Simulations in a single CPU will be 10-15 h long wereas 1 CPU + 1 GPU will last 30 minutes. the GPU is not available by default, one needs to manually select a session with it clicking at "Runtime" > "Change Runtime Type" and then select the T4 GPU accelerator in the pop-up window. After "Saving" the settings, the session will be GPU ready. 
+GPU installation is strongly recomended because VLLE simulations on LJ fluids is extremely efficient. Simulations in a single CPU will be 4 h long wereas 1 CPU + 1 GPU will last 4 minutes. the GPU is not available by default, one needs to manually select a session with it clicking at "Runtime" > "Change Runtime Type" and then select the T4 GPU accelerator in the pop-up window. After "Saving" the settings, the session will be GPU ready. 
 
 <p align="center">
   <img src="../Assets/Colab Setting.png" alt="Colab setting" width="100%">
