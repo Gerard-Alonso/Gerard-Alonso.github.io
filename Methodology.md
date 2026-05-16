@@ -48,7 +48,11 @@ We applied this methodology to explore the phase diagram and found different wet
   <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced wetting temperature is included in isolines in the C and D regions. </figcaption>
 </p>
 
-This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
+This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
+[![Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)]
+
+
+Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
 - **SAFT:** VLLE prediction with SGTpy (insert link to tutorial 1).
 - **MD:** VLLE prediction with LAMMPS MD (insert link to tutorial 2).
 
@@ -93,8 +97,7 @@ In general both methods can be used, but after illustrating the cost of MD we co
 [^5]: Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
 hydrodynamics. J. Chem. Phys. 18: 817–829
 [^6]: Figueroa F.A., Alonso, G., Mejía, A. Wetting Interfacial Diagram for Equal-Sized Binary Lennard-Jones Fluid Mixtures. J. Chem. Phys. under revision.
-[^7]: 
-Jovell, D., Alonso, G., Gamallo, P., Gonzalez-Olmos, R., Quinteros-Lama, H., Llovell, F. (2025) Combining molecular modelling approaches for a holistic thermophysical characterisation of fluorinated refrigerant blends. Int. J. Refrig., 175: 412–423
+[^7]: Jovell, D., Alonso, G., Gamallo, P., Gonzalez-Olmos, R., Quinteros-Lama, H., Llovell, F. (2025) Combining molecular modelling approaches for a holistic thermophysical characterisation of fluorinated refrigerant blends. Int. J. Refrig., 175: 412–423
 
 
 ---------------------------------------------------------------------------
