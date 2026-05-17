@@ -151,37 +151,23 @@ You should get a rapidly converging function like the following one:
   <img src="../Assets/E conv.png" alt="E convergence" width="100%">
 </p>
 
+Dynamical density profile converge is also a safety check. In this tutorial we have only generated a single density profile after running 1 ns, and we will plot it. However, production should provide several plots at different times and they should all be overlapped in a single figure, seing no difference.
 
 ```python
-import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
-# Cargar datos de una simulación de LAMMPS o VASP
-data = pd.read_csv('log_file.csv')
+data_1 = np.loadtxt('C1-F1.txt', skiprows=4)
+data_2 = np.loadtxt('C2-F1.txt', skiprows=4)
 
-# Calcular el promedio de la energía total
-mean_energy = data['Energy'].mean()
-print(f"La energía promedio es: {mean_energy}")
----
-# Graficar la evolución de la temperatura
-plt.plot(data['Step'], data['Temp'])
-plt.xlabel('Timestep')
-plt.ylabel('Temperature (K)')
-plt.show()
-```
-Esto es un ejemplo de código para bash
-
-```bash
-for i in $(seq 1 10); do cat "hola $i" ; done
-clear
-pip install lammps
+plt.plot(data_1[:,1], data_1[:,2],'r-')
+plt.plot(data_2[:,1], data_2[:,2],'k-')
+plt.xlabel('z / Å')
+plt.ylabel('Number Density / Molecs per bin')
 ```
 
-y este es un ejemplo de input de lammps
+You will see a poorly averaged density profile with an $\alpha$ phase rich in component one (in red) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in black). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces.
 
-```lammps
-fix  id  all  nvt  temp 200 200 1000
-run 100000
-```
-
-Eso sería de momento
+<p align="center">
+  <img src="../Assets/rho_prof.png" alt="Density profiles" width="100%">
+</p>
