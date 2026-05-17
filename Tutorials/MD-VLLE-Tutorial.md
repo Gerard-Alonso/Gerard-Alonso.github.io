@@ -94,6 +94,7 @@ pair_modify	tail	no
 # 		Etol	      Ftol	   Maxiter	Maxeval
 minimize 	1.0e-4 	     1.0e-6 	    1000       10000
 
+reset_timestep  0
 # ------------------ Prints ----------------------
 thermo 		1000					
 thermo_style 	custom	step cpu temp press density etotal ke pe evdwl etail 
