@@ -39,7 +39,82 @@ Also interfacial tension values converge when the energy cutoff radius ($r_{cut}
 - (2) **Each interfacial tension:** As a more certain check of convergence, since pressure -> tension oscillates wildy. This will be post-processed from the **Global-Tensor.txt** output file.
 - (3) **The component-wise density profile:** To find any change in particle distribution within each phase. This will be post-processed from the **C1/C2-F1.txt** output files.
 
-The following LAMMPS input file is designed to create a VLLE cell with two LJ fluids (types 1 and 2) with different $\varepsilon_i$ parameters, time evolve it and obtain all necessary output to post-process the pressure tensor in the Irving & Kirkwood formulation [^2]
+The following LAMMPS input file is designed to create a VLLE cell with two LJ fluids (types 1 and 2) with different $\varepsilon_i$ parameters, time evolve it and obtain all necessary outputs to post-process the pressure tensor in the Irving & Kirkwood formulation [^2]. Time evolution should be performed at the NVT ensemble to only fix temperature. Equilibrium pressure will be obtained from the pressure tensor profile.
+
+$\gamma^{\alpha\beta}=\int_a^b{P_{zz}-\frac{ P_{xx}+P_{yy} }{2}} dz$
+
+```lammps
+# ----------------- Initial Definitions ------------------
+units		real    # r(Å), t(fs), E(Kcal/mol), T(K), P(atm)
+boundary 	p p p	# PBCs in 3 directions
+dimension 	3	# 3D simulation
+atom_style  	full	# Molecular representation
+
+# ----------------- Set up the system ------------------
+lattice 	custom 1 a1 35 0. 0. a2 0. 35  0. a3 0. 0. 150.  basis 0. 0. 0
+      # for producction use (a1 48 0 0 a2 0 48 0 a3 0 0 240)
+region 		VLLE 	block 0 1 0 1 0 1 units lattice 
+create_box 	2 	VLLE 
+region 		L1 	block 0 1   0 1   0.06 0.3933 units lattice
+region 		L2 	block 0 1   0 1   0.3933 0.7266 units lattice  
+region 		V 	block 0 1   0 1   0.7266 1 units lattice 
+
+create_atoms 	1 random 1000 	9323 	L1
+create_atoms 	2 random 40 	  1104 	L1
+create_atoms 	1 random 40 	  4401 	L2
+create_atoms 	2 random 1000 	9922 	L2
+create_atoms 	1 random 5 	    1244	V
+create_atoms 	2 random 2      5331 	V
+          # for production multiply all molecule numbers x3
+
+mass	1	16
+mass    2       16
+group 	c1 	type 1
+group 	c2 	type 2
+
+# ----------- Force Field & Relaxation -------------
+pair_style	lj/cut		14
+      # for production use a 22.5 cutoff
+
+#Mie Coeff    i j     eps(Kcal/mol)    s (Å)   
+pair_coeff	  1 1     0.2941           3.73     
+pair_coeff	  2 2     0.3979           3.73    
+pair_coeff	  1 2     0.301          	 3.73     
+pair_modify	tail	no
+
+# 		Etol	      Ftol	   Maxiter	Maxeval
+minimize 	1.0e-4 	     1.0e-6 	    1000       10000
+
+# ------------------ Prints ----------------------
+thermo 		1000					
+thermo_style 	custom	step cpu temp press density etotal ke pe evdwl etail 
+
+dump 	1	all 	xyz 	100000 	lammpstrj.xyz   
+restart		10000000	rst
+
+# -------------- Run and Average -----------------
+
+timestep	4	
+fix 	TP 	all 	nvt 	temp 91 91 100
+
+# Make block averages for energy
+variable      	TotEng  equal etotal
+fix averages	all     ave/time 20 5000 100000 c_thermo_temp c_thermo_press[0] c_thermo_press[1] c_thermo_press[2] c_thermo_press[3] v_TotEng  file ave.lammps.txt      
+
+# Compute density and pressure profiles
+compute   lala all chunk/atom bin/1d z lower 1 units box
+compute 	T 	all temp
+compute 	press 	all stress/atom T
+
+fix 	tensor1 all 	ave/chunk 20 50000 1000000 lala density/number c_press[1] c_press[2] c_press[3] 	file Global-Tensor.txt
+fix 	tensor2 c1 	ave/chunk 20 50000 1000000 lala density/number file c1-F1.txt
+fix 	tensor3 c2 	ave/chunk 20 50000 1000000 lala density/number file c2-F1.txt
+      # for production run all (ave/chunk 20 500000 10000000)
+run 1000000
+      # for production run 60 milion steps
+```
+
+Generate this
 
 <p align="center">
   <img src="../Assets/Colab_Running.png" alt="Colab running" width="100%">
