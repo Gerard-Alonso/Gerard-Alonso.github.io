@@ -148,7 +148,7 @@ plt.ylabel('Energy / kcal/mol')
 You should get a rapidly converging function like the following one:
 
 <p align="center">
-  <img src="../Assets/E conv.png" alt="E convergence" width="100%">
+  <img src="../Assets/E conv.png" alt="E convergence" width="50%">
 </p>
 
 Dynamical density profile converge is also a safety check. In this tutorial we have only generated a single density profile after running 1 ns, and we will plot it. However, production should provide several plots at different times and they should all be overlapped in a single figure, seing no difference.
@@ -169,5 +169,5 @@ plt.ylabel('Number Density / Molecs per bin')
 You will see a poorly averaged density profile with an $\alpha$ phase rich in component one (in red) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in black). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces.
 
 <p align="center">
-  <img src="../Assets/rho_prof.png" alt="Density profiles" width="100%">
+  <img src="../Assets/rho_prof.png" alt="Density profiles" width="50%">
 </p>
