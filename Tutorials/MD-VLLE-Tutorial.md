@@ -214,8 +214,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.integrate import cumulative_trapezoid  # previously known as cumtrapz
 
-#data = np.loadtxt('Global-Tensor.txt', skiprows=4)
-
 with open('Global-Tensor.txt', 'r') as f:
     F = f.readlines()
 
@@ -250,4 +248,4 @@ ax2.set_ylabel('γ / mN m-1')
   <img src="../Assets/tensions.png" alt="tensions" width="100%">
 </p>
 
-The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and $\gamma^{\beta\delta= ZZ}$.
+The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and \gamma^{\beta\delta= ZZ}$.
