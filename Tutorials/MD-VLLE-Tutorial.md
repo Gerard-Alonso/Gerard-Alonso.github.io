@@ -8,15 +8,11 @@ title: Tutorials
 
 In this page we will share how to carry out proper VLLE simulations with the LAMMPS code [^1] using a simple mixture of LJ fluids. The first thing one needs is a suitable hardware to run the code. This may be your own computer, an HPC cluster or some on-line tool such as Google Colab. In this tutorial I will assume you do not have no access to any computing resources, so you will use Google Colab. 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gerard-Alonso/Gerard-Alonso.github.io/blob/main/Tutorials/LAMMPS_GPU.ipynb)
-
-https://colab.research.google.com/
-
 Google Colab allows users to work for a limited time using a combination of 2 CPUs + 1 GPU (Nvidia T4) for free. This tutorial will allow you to run a VLLE calculation for a short time frame and analyze the obtained results. Proper publication-level simualtions require significantly more time and statistics to properly run but free Google Colab will disconnect us before ending those simulations. For this reason, inputs will come with comments on how to modify them to improve them from "cheap examples" to "publication ready simulations".
 
-First enter into the Colab webpage, get an account (if you don't have it already) and log in. A new window will open to select a *ipynb* file to start working. Select "Upload" and open the following notebook shared here:
+First enter into the Colab webpage, get an account (if you don't have it already) and log in. If your account is ready, just click the following link to open the LAMMPS-ready Colab notebook:
 
-[![Download Colab Notebook](https://img.shields.io/badge/Download-Notebook-blue?style=for-the-badge&logo=github)](LAMMPS_GPU.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gerard-Alonso/Gerard-Alonso.github.io/blob/main/Tutorials/LAMMPS_GPU.ipynb)
 
 ### Step 1: Setting your LAMMPS
 This notebook has 2 blocks:
