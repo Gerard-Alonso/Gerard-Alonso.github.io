@@ -53,6 +53,7 @@ atom_style  	full	# Molecular representation
 # ----------------- Set up the system ------------------
 lattice 	custom 1 a1 35 0. 0. a2 0. 35  0. a3 0. 0. 150.  basis 0. 0. 0
       # for producction use (a1 48 0 0 a2 0 48 0 a3 0 0 240)
+
 region 		VLLE 	block 0 1 0 1 0 1 units lattice 
 create_box 	2 	VLLE 
 region 		L1 	block 0 1   0 1   0.06 0.3933 units lattice
@@ -67,10 +68,10 @@ create_atoms 	1 random 5 	    1244	V
 create_atoms 	2 random 2      5331 	V
           # for production multiply all molecule numbers x3
 
-mass	1	16
-mass    2       16
-group 	c1 	type 1
-group 	c2 	type 2
+mass	  1	    16
+mass    2     16
+group 	c1 	  type 1
+group 	c2 	  type 2
 
 # ----------- Force Field & Relaxation -------------
 pair_style	lj/cut		14
@@ -110,6 +111,7 @@ fix 	tensor1 all 	ave/chunk 20 50000 1000000 lala density/number c_press[1] c_pr
 fix 	tensor2 c1 	ave/chunk 20 50000 1000000 lala density/number file c1-F1.txt
 fix 	tensor3 c2 	ave/chunk 20 50000 1000000 lala density/number file c2-F1.txt
       # for production run all (ave/chunk 20 500000 10000000)
+
 run 1000000
       # for production run 60 milion steps
 ```
