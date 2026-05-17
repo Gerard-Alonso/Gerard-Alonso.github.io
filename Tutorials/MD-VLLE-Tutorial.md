@@ -124,13 +124,33 @@ run 1000000
       # for production run 60 milion steps
 ```
 
+## Step 3: Run and check convergence.
+
 Once the $1^{st}$ cell ends the LAMMPS installation we will directly run the $2^{nd} cell to execute the simulation. Many new output files will appear onto the "files navigator" panel as seen in the following picture. We will wait for the simulation to end and we will download all files mentioned here to post-process:
 
 <p align="center">
   <img src="../Assets/Colab_Running.png" alt="Colab running" width="100%">
 </p>
 
-A continuación, se muestra un ejemplo de cómo procesar datos de una simulación usando Python y Pandas:
+To check the energy convergence apply the following python code to the **ave.lammps.txt** file. You'll need the common numpy and matplotlib modules to make it work:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.loadtxt('ave.lammps.txt')
+
+plt.plot(data[:,0]/1e6, data[:,6], 'o-')
+plt.xlabel('time / ns')
+plt.ylabel('Energy / kcal/mol')
+```
+
+You should get a rapidly converging function like the following one:
+
+<p align="center">
+  <img src="../Assets/E conv.png" alt="E convergence" width="100%">
+</p>
+
 
 ```python
 import pandas as pd
