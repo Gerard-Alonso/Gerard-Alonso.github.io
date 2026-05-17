@@ -169,7 +169,7 @@ plt.ylabel('Number Density / Molecs per bin')
 You will see a poorly averaged density profile with an $\alpha$ phase rich in component one (in red) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in black). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces.
 
 <p align="center">
-  <img src="../Assets/rho_prof.png" alt="Density profiles" width="50%">
+  <img src="../Assets/rho-prof.png" alt="Density profiles" width="100%">
 </p>
 
 ## Step 4: Extract the IFT
