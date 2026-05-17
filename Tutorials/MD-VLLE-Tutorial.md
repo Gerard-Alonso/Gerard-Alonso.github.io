@@ -39,9 +39,17 @@ Also interfacial tension values converge when the energy cutoff radius ($r_{cut}
 - (2) **Each interfacial tension:** As a more certain check of convergence, since pressure -> tension oscillates wildy. This will be post-processed from the **Global-Tensor.txt** output file.
 - (3) **The component-wise density profile:** To find any change in particle distribution within each phase. This will be post-processed from the **C1/C2-F1.txt** output files.
 
-The following LAMMPS input file is designed to create a VLLE cell with two LJ fluids (types 1 and 2) with different $\varepsilon_i$ parameters, time evolve it and obtain all necessary outputs to post-process the pressure tensor in the Irving & Kirkwood formulation [^2]. Time evolution should be performed at the NVT ensemble to only fix temperature. Equilibrium pressure will be obtained from the pressure tensor profile.
+The following LAMMPS input file is designed to create a VLLE cell with two LJ fluids (types 1 and 2) with different $\varepsilon_i$ parameters, time evolve it and obtain all necessary outputs to post-process the pressure tensor in the Irving & Kirkwood formulation [^2]. Time evolution should be performed at the NVT ensemble to only fix temperature. Equilibrium pressure will be obtained from the pressure tensor profile. More information on which parameters are adequate for an interfacial tension calculation can be found at the corresponding "best practices" reference paper [^3]
 
 $\gamma^{\alpha\beta}=\int_a^b{P_{zz}-\frac{ P_{xx}+P_{yy} }{2}} dz$
+
+With Google Colab opened, and LAMMPS installing, open the "folder" icon in the left-hand side of the webpage to see the "files navigator". Right click onto the window space and click  "New File". Name it "in.lammps" to match the google colab notebook expected input name. When you double click it you sould see a new empty panel to write the input file. This is what you should be seing:
+
+<p align="center">
+  <img src="../Assets/Colab_preparing.png" alt="Colab preparing" width="100%">
+</p>
+
+Now copy the following LAMMPS input file into the right hand panel, which contains the **in.lammps** file:
 
 ```lammps
 # ----------------- Initial Definitions ------------------
@@ -116,7 +124,7 @@ run 1000000
       # for production run 60 milion steps
 ```
 
-Generate this
+Once the $1^{st}$ cell ends the LAMMPS installation we will directly run the $2^{nd} cell to execute the simulation. Many new output files will appear onto the "files navigator" panel as seen in the following picture. We will wait for the simulation to end and we will download all files mentioned here to post-process:
 
 <p align="center">
   <img src="../Assets/Colab_Running.png" alt="Colab running" width="100%">
