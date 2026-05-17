@@ -8,9 +8,7 @@ title: Tutorials
 
 In this page we will share how to carry out proper VLLE simulations with the LAMMPS code [^1] using a simple mixture of LJ fluids. The first thing one needs is a suitable hardware to run the code. This may be your own computer, an HPC cluster or some on-line tool such as Google Colab. In this tutorial I will assume you do not have no access to any computing resources, so you will use Google Colab. 
 
-<a href="https://colab.research.google.com/" target="_blank">
-  <img src="https://colab.research.google.com/" alt="Open In Colab"/>
-</a>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Gerard-Alonso/Gerard-Alonso.github.io/Tutorials/LAMMPS_GPU.ipynb)
 
 https://colab.research.google.com/
 
