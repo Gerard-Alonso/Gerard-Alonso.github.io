@@ -171,3 +171,47 @@ You will see a poorly averaged density profile with an $\alpha$ phase rich in co
 <p align="center">
   <img src="../Assets/rho_prof.png" alt="Density profiles" width="50%">
 </p>
+
+## Step 4: Extract the IFT
+The LAMMPS simulation we've made extracts the average stress tensor (represented by $\sigma_{ab}$) felt in a bin, not the pressure tensor (represented by $P_{ab}$), so we need to convert it. The relationship between both is:
+
+$P_{ij} = - <N_{bin}> <\sigma_{ij}>/V_{bin}$
+
+In the following python code, we take the elements of the stress tensor and make this conversion for the three $P_{xx}, P_{yy}, P_{zz}$ elements and we make a cumulative integral for each z (from 0 to z). We plot both, the pressure tensor (to see the anisotropy generated at the interface) that give rise to the cumulative interfacial tension plateaus. The plateau difference average heigh is directly the tension of each interface.
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.integrate import cumulative_trapezoid  # previously known as cumtrapz
+
+data = np.loadtxt('Global-Tensor.txt', skiprows=4)
+
+Vbin = 38 * 38 * 1   # Volume in Å3 of each bin. 38 is the Lx and Ly. 1 is the width chosen for each bin
+
+z  = data[:,1]
+N  = data[:,2]
+sx = data[:,4]
+sy = data[:,5]
+sz = data[:,6]
+
+Px = -N*sx/Vbin
+Py = -N*sy/Vbin
+Pz = -N*sz/Vbin
+dg = (Pz - (Px+Py)/2) *0.0101325    # conversion from Real to mN/m
+cum_IFT = cumulative_trapezoid(dg, z)
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+ax1.plot(z, Px,'r-')
+ax1.plot(z, Py,'b-')
+ax1.plot(z, Pz,'k-')
+ax1.set_xlabel('z / Å')
+ax1.set_ylabel('P / atm')
+
+ax2.plot(z[1:], cum_IFT,'r-')
+ax2.set_xlabel('z / Å')
+ax2.set_ylabel('γ / mN m-1')
+```
+
+<p align="center">
+  <img src="../Assets/tensions.png" alt="tensions" width="100%">
+</p>
