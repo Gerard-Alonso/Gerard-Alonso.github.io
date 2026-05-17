@@ -152,19 +152,48 @@ You should get a rapidly converging function like the following one:
   <img src="../Assets/E conv.png" alt="E convergence" width="50%">
 </p>
 
-Dynamical density profile converge is also a safety check. In this tutorial we have only generated a single density profile after running 1 ns, and we will plot it. However, production should provide several plots at different times and they should all be overlapped in a single figure, seing no difference.
+Dynamical density profile converge is also a safety check. In this tutorial we have only generated two density profiles. However, production should provide several plots at different times and they should all be overlapped in a single figure. Once the profile does not change, dynamical equilibrium is achieved.
 
 ```python
 import matplotlib.pyplot as plt
-import numpy as np
 
-data_1 = np.loadtxt('C1-F1.txt', skiprows=4)
-data_2 = np.loadtxt('C2-F1.txt', skiprows=4)
+with open('c1-F1.txt', 'r') as f:
+    F = f.readlines()
 
-plt.plot(data_1[:,1], data_1[:,2],'r-')
-plt.plot(data_2[:,1], data_2[:,2],'k-')
-plt.xlabel('z / Å')
-plt.ylabel('Number Density / Molecs per bin')
+frame1 = [line.split() for line in F[4:154]]
+frame2 = [line.split() for line in F[155:305]] 
+a1_x = [float(line[1]) for line in frame1]
+a1_y = [float(line[2]) for line in frame1]
+a2_x = [float(line[1]) for line in frame2]
+a2_y = [float(line[2]) for line in frame2]
+
+with open('c2-F1.txt', 'r') as f:
+    F = f.readlines()
+
+frame1 = [line.split() for line in F[4:154]]
+frame2 = [line.split() for line in F[155:305]] 
+b1_x = [float(line[1]) for line in frame1]
+b1_y = [float(line[2]) for line in frame1]
+b2_x = [float(line[1]) for line in frame2]
+b2_y = [float(line[2]) for line in frame2]
+
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
+
+ax1.plot(b1_x, b1_y, 'r')
+ax1.plot(a1_x, a1_y, 'k')
+
+ax1.set_title("Frame 1")
+ax1.set_xlabel("Z / Å)")
+ax1.set_ylabel("Number density / molecs per bin")
+
+ax2.plot(b2_x, b2_y, 'r')
+ax2.plot(a2_x, a2_y, 'k')
+ax2.set_title("Frame 2")
+ax1.set_xlabel("Z / Å)")
+
+fig.tight_layout()
+plt.show()
 ```
 
 You will see a poorly averaged density profile with an $\alpha$ phase rich in component one (in red) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in black). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces.
@@ -185,15 +214,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.integrate import cumulative_trapezoid  # previously known as cumtrapz
 
-data = np.loadtxt('Global-Tensor.txt', skiprows=4)
+#data = np.loadtxt('Global-Tensor.txt', skiprows=4)
+
+with open('Global-Tensor.txt', 'r') as f:
+    F = f.readlines()
 
 Vbin = 38 * 38 * 1   # Volume in Å3 of each bin. 38 is the Lx and Ly. 1 is the width chosen for each bin
 
-z  = data[:,1]
-N  = data[:,2]
-sx = data[:,4]
-sy = data[:,5]
-sz = data[:,6]
+frame2 = [line.split() for line in F[155:305]] 
+z   = np.array([float(line[1]) for line in frame2])
+N  = np.array([float(line[2]) for line in frame2])
+sx = np.array([float(line[4]) for line in frame2])
+sy = np.array([float(line[5]) for line in frame2])
+sz = np.array([float(line[6]) for line in frame2])
 
 Px = -N*sx/Vbin
 Py = -N*sy/Vbin
@@ -216,3 +249,5 @@ ax2.set_ylabel('γ / mN m-1')
 <p align="center">
   <img src="../Assets/tensions.png" alt="tensions" width="100%">
 </p>
+
+The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and $\gamma^{\beta\delta= ZZ}$.
