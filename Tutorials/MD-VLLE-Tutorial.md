@@ -254,3 +254,6 @@ The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= X
 [^2] Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
 hydrodynamics. J. Chem. Phys. 18: 817–829
 [^3] Muller, E. A., Ervik, Å., & Mejía, A. (2021). A Guide to Computing Interfacial Properties of Fluids from Molecular Simulations [Article v1.0]. Living J. Comp. Mol. Sci., 2(1): 21385.
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
