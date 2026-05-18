@@ -24,3 +24,12 @@
     <span style="display: block; text-align: center; color: #0366d6; font-weight: bold; margin-top: 8px; font-family: sans-serif;">Tutorials</span>
   </a>
 </p>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
