@@ -14,11 +14,11 @@ A three-phase line with a low temperature heteroazeotropic point was located for
   - Large chain alkanes keep the butanol-rich end of the VLLLE similar to the binary water + butanol and displace significantly the vapor end.
 This is correlated with the temperature of the binary azeotropes. When binary mixtures have similar heteroazeotropic temperatures the vapor phase is placed in the center of the line, whereas when they have different temperatures the vapor phase is found closer to the lower boiling point binary mixture. 
 
-We then aimed to evaluate the suitability of those thermodynamic scenarios in a standard heteroazeotropic distillation process. We have built the residue curve maps and carried out material balances to determine which alkanes perform better for the dehydration. After observing the compositions of the $1^{st}$ column product, we concluded that the distillation frontiers prevent those mixtures to be directly separated with this setup. However, the existence of the 4-phase point opens up new separation scenarios that can be exploited for separation, since the decanter will not generate 2 phases, but 3 at equilibrium. Those 3 phases can be treated separately or mixed at different ratios depending on the process needs. Exploring different distillation processes lays out of scope for this project but should be kept in mind when treating with such mixtures in the future.
+We then aimed to evaluate the suitability of those thermodynamic scenarios in a standard heteroazeotropic distillation process. We have built the residue curve maps and carried out material balances to determine which alkanes perform better for the dehydration. After observing the compositions of the $$1^{st}$$ column product, we concluded that the distillation frontiers prevent those mixtures to be directly separated with this setup. However, the existence of the 4-phase point opens up new separation scenarios that can be exploited for separation, since the decanter will not generate 2 phases, but 3 at equilibrium. Those 3 phases can be treated separately or mixed at different ratios depending on the process needs. Exploring different distillation processes lays out of scope for this project but should be kept in mind when treating with such mixtures in the future.
 
 <p align="center">
   <img src="Assets/RCM.png" alt="RMCs" width="100%">
-  <figcaption>Figure 2: Residue curve maps for the water + butanol + alkane ternary mixtures. The green dashed curve shows the composition of the liquid phase exiting the condenser after the $1^{st}$ column .</figcaption>
+  <figcaption>Figure 2: Residue curve maps for the water + butanol + alkane ternary mixtures. The green dashed curve shows the composition of the liquid phase exiting the condenser after the $$1^{st}$$ column .</figcaption>
 </p>
 
 Process simulations can be carried out to design new separation setups, but distillation of such ternary mixtures ended in a 4-phase VLLLE configuration, which has convergence difficulties due to the 3 liquids at equilibrium. For this reason, we have produced a free code based on activity coefficient models to incorporate robust 3-liquid equilibrium calculations in process simulations in the future. In this code we use the idea of Lucia et al., [^3] and Dennes et al [^4], who minimizes the Gibbs free energy of a mixture combining a flash (with a given global composition) and applying material balances to them. The method allows to predict the LLL phase equilibria solely from an initial global composition by first analyzing the miscibilities of each pair and then attemting to 
@@ -33,8 +33,8 @@ The complete works are compiled in the Undergraduate Theses of Octavio Barría [
   - GitHub Repository for the LLLE code: [![LLLE Repository](https://img.shields.io/badge/GitHub-LLLE_Code-blue?logo=github&style=for-the-badge)](https://github.com/nicodiazfp/CodigosMT)
   
 Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
-  - **Recommended Start:** VLLE prediction with SGTpy _(insert link to tutorial 1)_
-  - **Other Thing:** VLLLE prediction with SGTpy _(insert link to tutorial 2)_
+  - **Recommended Start:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
+  - **4-phase equilibria:** _Soon to be released._
 
 
 [^1]: Papaioannou, V., Lafitte, T., Avendaño, C., Adjiman, C.S., Jackson G., Müller, E.A., Amparo G. (2014) .Group contribution methodology based on the statistical associating fluid theory for heteronuclear molecules formed from Mie segments. J. Chem. Phys. 140: 054107
