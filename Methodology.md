@@ -84,7 +84,7 @@ In the next figure one can see the difference in LLE and VLLE predictions using 
 
 <p align="center">
   <img src="Assets/LLE.png" alt="LLE" width="50%">
-  <figcaptin>Figure 6: LLE, VLLE of water + CpME in red we have SAFT predictions, in blue MD results and in red black dots are experimental data. </figcaption>
+  <figcaption>Figure 6: LLE, VLLE of water + CpME in red we have SAFT predictions, in blue MD results and in red black dots are experimental data. </figcaption>
 </p>
 
 In general both methods can be used, but after illustrating the cost of MD we concluded that SAFT is the most suitable way to handle complex associative phase and intefacial property predictions. VLLE prediction tutorials were already shared above.
