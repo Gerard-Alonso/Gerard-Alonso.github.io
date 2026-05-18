@@ -8,11 +8,11 @@ The first stage of this project was to implement a sistematic methodology to pre
 
 We employed Molecular Dynamics (MD) simulations with LAMMPS [^1] to explore the relationship between phase equilbria and interfacial behavoir of binary Lennard-Jones (LJ) mixtures of equal size. The LAMMPS code can be downloaded and installed as shown by their webpage: https://www.lammps.org/#gsc.tab=0
 
-We selected a reference fluid with $\varepsilon_1$ = 148 K and $\sigma_1$ = $\sigma_2$ = 3.73 Å, and assigned $\varepsilon_2$ and $\varepsilon_{12}$ based on the $\zeta$ and $\Lambda$ coordinates of the global phase diagram, as shown in [^2]:
+We selected a reference fluid with $$\varepsilon_1$$ = 148 K and $$\sigma_1$$ = $$\sigma_2$$ = 3.73 Å, and assigned $$\varepsilon_2$$ and $$\varepsilon_{12}$$ based on the $$\zeta$$ and $$\Lambda$$ coordinates of the global phase diagram, as shown in [^2]:
 
-$\zeta=\frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
+$$\zeta=\frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$$
 
-$\Lambda=\frac{\varepsilon_2 - \varepsilon_12 + \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$
+$$\Lambda=\frac{\varepsilon_2 - \varepsilon_12 + \varepsilon_1}{\varepsilon_2 + \varepsilon_1}$$
 
 Simulation cell were built as standard coexistence orthorombic cells with two liquid phases and a vapor phase as shown in the following Figure. Each phase was filled with molecules according to their composition and density, as predicted with a preliminary calculation from a SAFT-VR Mie equation of state [^3], imposing an equivalent LJ potential. Results were compatible since the interaction potential is equivalent in both representations. SAFT calculations were carried out in the SGTpy python module [^4], which is an open-source code distributed through the following Git-hub: 
 
@@ -23,25 +23,25 @@ Simulation cell were built as standard coexistence orthorombic cells with two li
   <figcaption>Figure 1: Simulation box setup used for VLLE calculations. </figcaption>
 </p>
 
-We have tested the phase and interfacial behavior of several mixtures varying the ($\zeta, \Lambda$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($\gamma^{\alpha\beta}, \gamma^{\beta\delta}, \gamma^{\alpha\delta}$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
+We have tested the phase and interfacial behavior of several mixtures varying the ($$\zeta, \Lambda$$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($$\gamma^{\alpha\beta}, \gamma^{\beta\delta}, \gamma^{\alpha\delta}$$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
 
-$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $            
+$$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $ $           
 
-where $a$ and $b$ are the centers of the $\alpha$ and $\beta$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $\gamma^{\alpha\delta}$ > $\gamma^{\beta\delta}$ and $\gamma^{\alpha\beta}$ we can write the relationship:
+where $$a$$ and $$b$$ are the centers of the $$\alpha$$ and $$\beta$$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $$\gamma^{\alpha\delta}$$ > $$\gamma^{\beta\delta}$$ and $$\gamma^{\alpha\beta}$$ we can write the relationship:
 
-**as : :** $\gamma^{\alpha\delta} \le \gamma^{\beta\delta} + \gamma^{\alpha\beta}$
+**as : :** $$\gamma^{\alpha\delta} \le \gamma^{\beta\delta} + \gamma^{\alpha\beta}$$
 
-**or as : :**  $S^{\beta,\alpha\delta} = \gamma^{\beta\delta} + \gamma^{\alpha\beta} - \gamma^{\alpha\delta}$
+**or as : :**  $$S^{\beta,\alpha\delta} = \gamma^{\beta\delta} + \gamma^{\alpha\beta} - \gamma^{\alpha\delta}$$
 
 
-If the inequality holds for every temperature the system exhibits partial wetting. If the equality holds for every temperature the system exhibits complete wetting. And if the inequality switches to an equality at a certain temperature it exhibits a wetting transition temperature ($T_w$), which can be 1st order or 2nd order transitions depending on the curvature (linear or quadratic) of the $S^{\beta,\alpha\delta}$ function when approaching $T_w$
+If the inequality holds for every temperature the system exhibits partial wetting. If the equality holds for every temperature the system exhibits complete wetting. And if the inequality switches to an equality at a certain temperature it exhibits a wetting transition temperature ($T_w$), which can be 1st order or 2nd order transitions depending on the curvature (linear or quadratic) of the $$S^{\beta,\alpha\delta}$$ function when approaching $$T_w$$
 
 <p align="center">
   <img src="Assets/Wettings.png" alt="Wettings" width="100%">
   <figcaption>Figure 2: Interfacial tension interplay for systems with (a) partial wetting, (b) perfect wetting, (c) 1st order wetting transition and (d) 2nd order wetting transition. </figcaption>
 </p>
 
-We applied this methodology to explore the phase diagram and found different wetting behaviors depending on the ($\zeta, \Lambda$) coordinates. Those are shown in Figure 3 where each simulation set of 4-5 temperatures is shown by a single point in the diagram. Regions where the behavior is changing from one type of wetting to another are further populated to get better accuracy of the transition regions. A cleaner final diagram is also shared with the four wetting regions placed 
+We applied this methodology to explore the phase diagram and found different wetting behaviors depending on the ($$\zeta, \Lambda$$) coordinates. Those are shown in Figure 3 where each simulation set of 4-5 temperatures is shown by a single point in the diagram. Regions where the behavior is changing from one type of wetting to another are further populated to get better accuracy of the transition regions. A cleaner final diagram is also shared with the four wetting regions placed 
 
 <p align="center">
   <img src="Assets/Map.png" alt="Map" width="100%">
@@ -50,8 +50,7 @@ We applied this methodology to explore the phase diagram and found different wet
 
 This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
 
-[![Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)]
-(https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
+[![Wetting Map](https://img.shields.io/badge/Análisis-Wetting%20Interfacial%20Map-darkgreen?style=for-the-badge&logo=github)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
 
 Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
 - **SAFT:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
