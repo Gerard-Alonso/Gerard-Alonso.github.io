@@ -196,7 +196,7 @@ fig.tight_layout()
 plt.show()
 ```
 
-You will see that Frame 1 and Frame 2 are not exactly equal. To ensure convergency, we should produce a Frame 3 at {5.5 - 7.5 ns} to ensure the plot is converged. However, will use Frame 2 "as converged" for the sake of this tutorial. One can see that the density profile has an $\alpha$ phase rich in component one (in red) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in black). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces.
+You will see that Frame 1 and Frame 2 are not exactly equal. To ensure convergency, we should produce a Frame 3 at {5.5 - 7.5 ns} to ensure the plot is converged. However, will use Frame 2 "as converged" for the sake of this tutorial. One can see that the density profile has an $\alpha$ phase rich in component one (in black) accumulating at the vapor-$\beta$ interface. The $\beta$ phase is rich in component 2 (in red). No accumulation is seen in the LL or the $\alpha$-Vapor interfaces. The following profile starts from the $\alpha$ phase, proceeds with vapor, the $\beta$ and ends with $\alpha$ again.
 
 <p align="center">
   <img src="../Assets/rho-prof.png" alt="Density profiles" width="100%">
@@ -251,7 +251,7 @@ ax2.set_ylabel('γ / mN m-1')
   <img src="../Assets/tritensions.png" alt="tensions" width="100%">
 </p>
 
-The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and \gamma^{\beta\delta= ZZ}$.
+The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= 2 mN/m; \gamma^{\alpha\delta}= 14 mN/m; and \gamma^{\beta\delta= 16 mN/m}$.
 
 [^1]: Tompson, A. P., Aktulga, H. M., Berger, R., Bolintineanu, D. S., Brown, W. M., Crozier, P. S., in ’t Veld, P. J., Kohlmeyer, A., Moore, S. G., Nguyen, T. D., Shan, R., Stevens, M. J., Tranchida, J., Trott, C., & Plimpton, S. J. (2022). LAMMPS—A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications, 271: 108171.
 [^2] Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
