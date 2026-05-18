@@ -105,7 +105,7 @@ restart		10000000	rst
 # -------------- Run and Average -----------------
 
 timestep	4	
-fix 	TP 	all 	nvt 	temp 91 91 100
+fix 	TP 	all 	nvt 	temp 105 105 400
 
 # Make block averages for energy
 variable      	TotEng  equal etotal
@@ -116,12 +116,12 @@ compute   lala all chunk/atom bin/1d z lower 1 units box
 compute 	T 	all temp
 compute 	press 	all stress/atom T
 
-fix 	tensor1 all 	ave/chunk 20 50000 1000000 lala density/number c_press[1] c_press[2] c_press[3] 	file Global-Tensor.txt
-fix 	tensor2 c1 	ave/chunk 20 50000 1000000 lala density/number file c1-F1.txt
-fix 	tensor3 c2 	ave/chunk 20 50000 1000000 lala density/number file c2-F1.txt
+fix 	tensor1 all 	ave/chunk 20 100000 2500000 lala density/number c_press[1] c_press[2] c_press[3] 	file Global-Tensor.txt
+fix 	tensor2 c1 	ave/chunk 20 100000 2500000 lala density/number file c1-F1.txt
+fix 	tensor3 c2 	ave/chunk 20 100000 2500000 lala density/number file c2-F1.txt
       # for production run all (ave/chunk 20 500000 10000000)
 
-run 1000000
+run 5000000
       # for production run 60 milion steps
 ```
 
@@ -248,7 +248,7 @@ ax2.set_ylabel('γ / mN m-1')
 ```
 
 <p align="center">
-  <img src="../Assets/tensions.png" alt="tensions" width="100%">
+  <img src="../Assets/tritensions.png" alt="tensions" width="100%">
 </p>
 
 The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and \gamma^{\beta\delta= ZZ}$.
