@@ -34,7 +34,7 @@ The complete works are compiled in the Undergraduate Theses of Octavio Barría [
   
 Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
   - **Recommended Start:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
-  - **4-phase equilibria:** _Soon to be released._
+  - **4-phase equilibria:** _Soon to be released._ - requires modification of the vlleb function from sgtpy to accept ternary mixtures
 
 
 [^1]: Papaioannou, V., Lafitte, T., Avendaño, C., Adjiman, C.S., Jackson G., Müller, E.A., Amparo G. (2014) .Group contribution methodology based on the statistical associating fluid theory for heteronuclear molecules formed from Mie segments. J. Chem. Phys. 140: 054107
