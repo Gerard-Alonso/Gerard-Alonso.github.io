@@ -54,8 +54,8 @@ This tool, in conjunction to the global phase diagram, is a fast and reliable me
 (https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
 
 Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
-- **SAFT:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial.html).
-- **MD:** [VLLE prediction with LAMMPS MD](Tutorials/MD-VLLE-Tutorial.html).
+- **SAFT:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
+- **MD:** [VLLE prediction with LAMMPS MD](Tutorials/MD-VLLE-Tutorial).
 
 ## Non-Associative Refrigerant Mixtures
 We have employed the same methodology to different refrigerant components and mixtures to evaluate their phase equilibria. The objectives of this work are not in the same line as the project but serve as an intermediate step to evaluate the capacity of MD/SAFT methodologies in capturing the accuracy in reproducing phase equilibria of more complex non-associative mixtures. This test could not be done with our molecules of interest, because butanol and water always associate.
