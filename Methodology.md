@@ -137,3 +137,12 @@ hydrodynamics. J. Chem. Phys. 18: 817–829
 <a href="./Polar-entrainers" class="banner-link etapa-3">
   STAGE 3: Polar Entrainers (Ethers & Mixed)
 </a>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
