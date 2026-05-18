@@ -50,12 +50,12 @@ We applied this methodology to explore the phase diagram and found different wet
 
 This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
 
-![Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)
-
+![[Wetting Map](https://img.shields.io/badge/GitHub-Wetting%20Interfacial%20Map-blue?logo=github&style=flat-square)]
+(https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
 
 Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
-- **SAFT:** VLLE prediction with SGTpy (insert link to tutorial 1).
-- **MD:** VLLE prediction with LAMMPS MD (insert link to tutorial 2).
+- **SAFT:** [VLLE prediction with SGTpy] (Tutorials/SAFT-VLLE-Tutorial).
+- **MD:** [VLLE prediction with LAMMPS MD] (Tutorials/MD-VLLE-Tutorial).
 
 ## Non-Associative Refrigerant Mixtures
 We have employed the same methodology to different refrigerant components and mixtures to evaluate their phase equilibria. The objectives of this work are not in the same line as the project but serve as an intermediate step to evaluate the capacity of MD/SAFT methodologies in capturing the accuracy in reproducing phase equilibria of more complex non-associative mixtures. This test could not be done with our molecules of interest, because butanol and water always associate.
