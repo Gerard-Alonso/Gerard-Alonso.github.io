@@ -22,7 +22,7 @@ These results denote that associative compatibility is negative for the separati
 The complete works with more technical details are compiled in the corresponding publications [^3],[^4]. Please check them out for more information. 
   
 Additionally, some codes and tutorials are shared in here to teach how to calculate these particular phase equilibria with SGTpy:
-  - **Recommended Start:** VLLE prediction with SGTpy _(insert link to tutorial 1)_
+  - **Recommended Start:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
   - **Water+Butanol+CPME:** [![DMC System](https://img.shields.io/badge/GitHub-Water%20%2B%201--Butanol%20%2B%20CPME-blue?logo=github&style=flat-square)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BCPME)
   - **Water+Butanol+DMC:** [![DMC System](https://img.shields.io/badge/GitHub-Water%20%2B%201--Butanol%20%2B%20DMC-blue?logo=github&style=flat-square)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Water%2B1-Butanol%2BDMC)
     
