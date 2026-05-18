@@ -25,7 +25,7 @@ Simulation cell were built as standard coexistence orthorombic cells with two li
 
 We have tested the phase and interfacial behavior of several mixtures varying the ($$\zeta, \Lambda$$) coordinates. For each mixture we sampled 4-5 temperatures along the VLLE line to extract the phase envelope and its respective wetting behavior, which is related to the three available interfacial tensions ($$\gamma^{\alpha\beta}, \gamma^{\beta\delta}, \gamma^{\alpha\delta}$$). Interfacial tensions were calculated using the Irving and Kirkwood formulation [^5], building and integrating the $P(z)$ profile along the z direction as:
 
-$$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $ $           
+$$\gamma^{\alpha\beta}=\int_{a}^{b} P_N-P_T dz  $$           
 
 where $$a$$ and $$b$$ are the centers of the $$\alpha$$ and $$\beta$$ bulks. Different wetting behaviors can be identified as a function of how the three interfacial tensions behave with temperature. When the three tensions are ordered as $$\gamma^{\alpha\delta}$$ > $$\gamma^{\beta\delta}$$ and $$\gamma^{\alpha\beta}$$ we can write the relationship:
 
@@ -50,7 +50,7 @@ We applied this methodology to explore the phase diagram and found different wet
 
 This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
 
-[![Wetting Map](https://img.shields.io/badge/Análisis-Wetting%20Interfacial%20Map-darkgreen?style=for-the-badge&logo=github)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
+[![Wetting Map](https://img.shields.io/badge/Github-Wetting%20Interfacial%20Map-blue?style=for-the-badge&logo=github)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
 
 Tutorials on how to build phase equilibrium calculations with SAFT and MD can be found in the following Links:
 - **SAFT:** [VLLE prediction with SGTpy](Tutorials/SAFT-VLLE-Tutorial).
