@@ -48,7 +48,7 @@ We applied this methodology to explore the phase diagram and found different wet
   <figcaption>Figure 3: Construction of the global wetting diagram for binary LJ mixtures of equal size A: partial wetting, B: complete wetting, C: 1st oder transition, D: 2nd order transition. The reduced wetting temperature is included in isolines in the C and D regions. </figcaption>
 </p>
 
-This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
+This tool, in conjunction to the global phase diagram, is a fast and reliable method to predict the relationship between phase and interfacial behavior in model mixtures. Only by defining the interaction potential between both species, one can know (a priori) which equilibria and which wetting will the mixture exhibit. Those results are compiled in more depth in the corresponding manuscript in [^6]. The whole set of results alonside inputs and outputs to reproduce the work can be found in the following open repository:
 
 [![Wetting Map](https://img.shields.io/badge/Github-Wetting%20Interfacial%20Map-blue?style=for-the-badge&logo=github)](https://github.com/AMThermo/Triphasic_Equilibria/tree/main/Wetting%20Interfacial%20Map)
 
@@ -73,7 +73,7 @@ The mixtures we evaluated are: R410A (50% R32 + 50% R125), R513A (56.0% R1234yf 
   <figcaption>Figure 5: Properties of refrigerant blends predicted through MD and SAFT. (a) Phase envelope, (b) Vapor pressures, (c) Heat capacity, (d) Interfacial tensions, (e) Viscosity  </figcaption>
 </p>
 
-Those results show that R407F could be replaced by R513A because it has similar volatility but better heat and mass transfer. R410A could be replaced by either R542B or R454B because they all have similar properties but with lower GWP. More information on this topic can be found in the associated publication [7]. 
+Those results show that R407F could be replaced by R513A because it has similar volatility but better heat and mass transfer. R410A could be replaced by either R542B or R454B because they all have similar properties but with lower GWP. More information on this topic can be found in the associated publication [^7]. 
 
 ## Associative Refrigerant Mixtures.
 When modeling Water + Butanol + Entrainer mixtures with SAFT-based equations of state, it is required to include association interactions to account for the strongly directional hydrogen bonds generated within those fluids. However, in MD, O -- H association comes implicitly from the molecular representation and the electrostatic interactions involved from those groups. 
