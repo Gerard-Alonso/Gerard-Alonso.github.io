@@ -10,7 +10,7 @@
 **Projects**
 <p align="center">
  <a href="Projects" style="text-decoration: none; display: inline-block; margin: 15px;">
-    <img src="Assets/Projects.png" alt="Projects" 
+    <img src="Assets/Project1-banner.png" alt="butanol project" 
          style="width: 100%; height: 100%; border-radius: 20%; object-fit: cover; border: 3px solid #0366d6; display: block; margin: 0 auto;">
     <span style="display: block; text-align: center; color: #0366d6; font-weight: bold; margin-top: 8px; font-family: sans-serif;">Projects</span>
   </a>
