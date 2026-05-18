@@ -18,7 +18,7 @@ We then aimed to evaluate the suitability of those thermodynamic scenarios in a 
 
 <p align="center">
   <img src="Assets/RCM.png" alt="RMCs" width="100%">
-  <figcaption>Figure 2: Residue curve maps for the water + butanol + alkane ternary mixtures. The green dashed curve shows the composition of the liquid phase exiting the condenser after the $$1^{st}$$ column .</figcaption>
+  <figcaption>Figure 2: Residue curve maps for the water + butanol + alkane ternary mixtures. The green dashed curve shows the composition of the liquid phase exiting the condenser after the $1^{st}$ column .</figcaption>
 </p>
 
 Process simulations can be carried out to design new separation setups, but distillation of such ternary mixtures ended in a 4-phase VLLLE configuration, which has convergence difficulties due to the 3 liquids at equilibrium. For this reason, we have produced a free code based on activity coefficient models to incorporate robust 3-liquid equilibrium calculations in process simulations in the future. In this code we use the idea of Lucia et al., [^3] and Dennes et al [^4], who minimizes the Gibbs free energy of a mixture combining a flash (with a given global composition) and applying material balances to them. The method allows to predict the LLL phase equilibria solely from an initial global composition by first analyzing the miscibilities of each pair and then attemting to 
