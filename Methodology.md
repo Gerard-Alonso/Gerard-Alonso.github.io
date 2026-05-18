@@ -90,14 +90,6 @@ In the next figure one can see the difference in LLE and VLLE predictions using 
 In general both methods can be used, but after illustrating the cost of MD we concluded that SAFT is the most suitable way to handle complex associative phase and intefacial property predictions. VLLE prediction tutorials were already shared above.
 
 
-[^1]: Tompson, A. P., Aktulga, H. M., Berger, R., Bolintineanu, D. S., Brown, W. M., Crozier, P. S., in ’t Veld, P. J., Kohlmeyer, A., Moore, S. G., Nguyen, T. D., Shan, R., Stevens, M. J., Tranchida, J., Trott, C., & Plimpton, S. J. (2022). LAMMPS—A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications, 271: 108171.
-[^2]: van Konynenburg, P.H., Scott, R.L. (1980) Critical Lines and Phase Equilibria in Binary Van Der Waals Mixtures. Philos. Trans. R. Soc. Lond., Ser. A, 298(1442): 495–540
-[^3]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
-[^4]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
-[^5]: Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
-hydrodynamics. J. Chem. Phys. 18: 817–829
-[^6]: Figueroa F.A., Alonso, G., Mejía, A. Wetting Interfacial Diagram for Equal-Sized Binary Lennard-Jones Fluid Mixtures. J. Chem. Phys. under revision.
-[^7]: Jovell, D., Alonso, G., Gamallo, P., Gonzalez-Olmos, R., Quinteros-Lama, H., Llovell, F. (2025) Combining molecular modelling approaches for a holistic thermophysical characterisation of fluorinated refrigerant blends. Int. J. Refrig., 175: 412–423
 
 
 ---------------------------------------------------------------------------
@@ -146,3 +138,13 @@ hydrodynamics. J. Chem. Phys. 18: 817–829
   };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+[^1]: Tompson, A. P., Aktulga, H. M., Berger, R., Bolintineanu, D. S., Brown, W. M., Crozier, P. S., in ’t Veld, P. J., Kohlmeyer, A., Moore, S. G., Nguyen, T. D., Shan, R., Stevens, M. J., Tranchida, J., Trott, C., & Plimpton, S. J. (2022). LAMMPS—A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications, 271: 108171.
+[^2]: van Konynenburg, P.H., Scott, R.L. (1980) Critical Lines and Phase Equilibria in Binary Van Der Waals Mixtures. Philos. Trans. R. Soc. Lond., Ser. A, 298(1442): 495–540
+[^3]: Lafitte, T., Apostolakou, A., Avendaño, C., Galindo, A., Adjiman, C.S., Müller, E.A., Jackson, G. (2013) Accurate statistical associating fluid theory for chain molecules formed from Mie segments. J. Chem. Phys. 139 (15): 154504.
+[^4]: Mejía, A. E.A. Müller, G. Chaparro, (2021) SGTPy: A Python Code for Calculating the Interfacial Properties of Fluids Based on the Square Gradient Theory Using the SAFT-VR Mie Equation of State. J. Chem. Inf. Model. 61: 1244-1250.
+[^5]: Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
+hydrodynamics. J. Chem. Phys. 18: 817–829
+[^6]: Figueroa F.A., Alonso, G., Mejía, A. Wetting Interfacial Diagram for Equal-Sized Binary Lennard-Jones Fluid Mixtures. J. Chem. Phys. under revision.
+[^7]: Jovell, D., Alonso, G., Gamallo, P., Gonzalez-Olmos, R., Quinteros-Lama, H., Llovell, F. (2025) Combining molecular modelling approaches for a holistic thermophysical characterisation of fluorinated refrigerant blends. Int. J. Refrig., 175: 412–423
