@@ -249,3 +249,8 @@ ax2.set_ylabel('γ / mN m-1')
 </p>
 
 The resulting interfacial tensions from this point are: $\gamma^{\alpha\beta}= XX; \gamma^{\alpha\delta}= YY; and \gamma^{\beta\delta= ZZ}$.
+
+[^1]: Tompson, A. P., Aktulga, H. M., Berger, R., Bolintineanu, D. S., Brown, W. M., Crozier, P. S., in ’t Veld, P. J., Kohlmeyer, A., Moore, S. G., Nguyen, T. D., Shan, R., Stevens, M. J., Tranchida, J., Trott, C., & Plimpton, S. J. (2022). LAMMPS—A flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications, 271: 108171.
+[^2] Irving, J.H., Kirkwood, J.G. (1950) The statistical mechanical theory of transport processes. IV. The equations of
+hydrodynamics. J. Chem. Phys. 18: 817–829
+[^3] Muller, E. A., Ervik, Å., & Mejía, A. (2021). A Guide to Computing Interfacial Properties of Fluids from Molecular Simulations [Article v1.0]. Living J. Comp. Mol. Sci., 2(1): 21385.
